@@ -116,6 +116,15 @@ final class ExerciseCatalog {
         "Sonstiges": "questionmark.circle",
     ]
 
+    static let equipmentSymbols: [String: String] = [
+        "Maschine": "gearshape.2",
+        "Kabelzug": "cable.connector",
+        "Kurzhantel": "dumbbell",
+        "Langhantel": "figure.strengthtraining.traditional",
+        "Körpergewicht": "figure.core.training",
+        "Sonstiges": "ellipsis.circle",
+    ]
+
     private init() {
         guard let url = Bundle.main.url(forResource: "exercises", withExtension: "json"),
               let data = try? Data(contentsOf: url),
@@ -133,9 +142,16 @@ final class ExerciseCatalog {
         byId[id] ?? .placeholder(id: id)
     }
 
-    func grouped(matching search: String = "") -> [ExerciseGroup] {
+    /// Equipment values in the catalog, most common first.
+    var equipmentKinds: [String] {
+        let counts = Dictionary(grouping: all, by: \.equipment).mapValues(\.count)
+        return counts.keys.sorted { (counts[$0] ?? 0, $1) > (counts[$1] ?? 0, $0) }
+    }
+
+    func grouped(matching search: String = "", equipment: String? = nil) -> [ExerciseGroup] {
         let q = search.trimmingCharacters(in: .whitespaces).lowercased()
-        let filtered = q.isEmpty ? all : all.filter {
+        let pool = equipment.map { eq in all.filter { $0.equipment == eq } } ?? all
+        let filtered = q.isEmpty ? pool : pool.filter {
             $0.nameDE.lowercased().contains(q) || $0.nameEN.lowercased().contains(q)
                 || $0.group.lowercased().contains(q) || $0.equipment.lowercased().contains(q)
                 || $0.groupName.lowercased().contains(q) || $0.equipmentName.lowercased().contains(q)

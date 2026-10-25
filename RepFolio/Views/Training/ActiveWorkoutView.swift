@@ -155,6 +155,7 @@ struct ExerciseLogCard: View {
     @State private var suggestion: Progression.Suggestion?
     @State private var lastText: String?
     @State private var bestBefore: Double = 0
+    @State private var swapping = false
 
     init(sessionExercise: SessionExercise, sessionDate: Date, restSeconds: Int,
          onInfo: @escaping () -> Void, onRemove: @escaping () -> Void) {
@@ -193,6 +194,8 @@ struct ExerciseLogCard: View {
                 }
                 Spacer(minLength: 0)
                 Menu {
+                    Button("Ausführung ansehen", systemImage: "info.circle", action: onInfo)
+                    Button("Übung tauschen", systemImage: "arrow.triangle.2.circlepath") { swapping = true }
                     Button("Übung entfernen", systemImage: "trash", role: .destructive, action: onRemove)
                 } label: {
                     Image(systemName: "ellipsis")
@@ -203,9 +206,10 @@ struct ExerciseLogCard: View {
             }
 
             if let suggestion {
-                Label(suggestion.text, systemImage: suggestion.isIncrease ? "arrow.up.circle.fill" : "lightbulb")
+                Label(suggestion.text, systemImage: suggestion.isIncrease ? "arrow.up.circle.fill"
+                      : suggestion.isDeload ? "arrow.down.circle.fill" : "lightbulb")
                     .font(.caption)
-                    .foregroundStyle(suggestion.isIncrease ? .green : .secondary)
+                    .foregroundStyle(suggestion.isIncrease ? Color.green : suggestion.isDeload ? Color.orange : Color.secondary)
             }
             if let lastText {
                 Text(lastText).font(.caption2).foregroundStyle(.secondary)
@@ -233,6 +237,10 @@ struct ExerciseLogCard: View {
                 }
             }
 
+            if Plates.applies(to: exercise), let weight = plateWeight {
+                PlateLoadView(weight: weight)
+            }
+
             HStack {
                 Button {
                     addSet()
@@ -255,12 +263,26 @@ struct ExerciseLogCard: View {
         .padding(14)
         .background(.background, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .task(id: sessionExercise.exerciseId) { loadHistory() }
+        .sheet(isPresented: $swapping) {
+            ExercisePickerView(title: "Übung tauschen",
+                               suggestions: ExerciseCatalog.shared.alternatives(for: sessionExercise.exerciseId)) { ex in
+                WorkoutFactory.swap(sessionExercise, to: ex.id, in: context)
+            }
+        }
+    }
+
+    /// Weight of the next open set (or the last one) – the bar you are about to load.
+    private var plateWeight: Double? {
+        let sets = sessionExercise.sortedSets
+        return (sets.first { !$0.isDone } ?? sets.last)?.weightKg
     }
 
     private func loadHistory() {
-        let last = History.lastSessionSets(for: sessionExercise.exerciseId, in: context)
-        suggestion = Progression.suggest(lastSets: last, repMin: sessionExercise.repMin,
-                                         repMax: sessionExercise.repMax, increment: exercise.increment)
+        let history = History.sessions(for: sessionExercise.exerciseId, in: context)
+        let last = history.first?.sets ?? []
+        suggestion = Progression.suggest(lastSets: last, earlier: history.dropFirst().map(\.sets),
+                                         repMin: sessionExercise.repMin, repMax: sessionExercise.repMax,
+                                         increment: exercise.increment)
         if let first = last.first {
             let list = last.map { "\(Fmt.num($0.weightKg, digits: 2))×\($0.reps)" }.joined(separator: " · ")
             lastText = L("Letztes Mal (\(first.date.formatted(.dateTime.day().month(.abbreviated).locale(Fmt.locale)))): \(list)")

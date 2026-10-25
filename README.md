@@ -17,7 +17,7 @@
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-lightgrey">
 </p>
 
-> **Kurz auf Deutsch:** IronLog ist eine persönliche Gym-App (UI auf Deutsch). Sie schlägt dir einen Plan für 2× oder 3× Gym pro Woche vor, zeigt zu **jeder Übung Bilder mit dem Gerät**, speichert deine Gewichte und Läufe lokal auf dem iPhone und zeigt ein Dashboard mit geschätztem Kalorienverbrauch. Gebaut für die Installation über Xcode mit kostenlosem Apple-Account – inkl. Erinnerung, bevor die 7-Tage-Signatur abläuft, und automatischen Backups.
+> **Kurz auf Deutsch:** RepFolio ist eine persönliche Gym- & Lauf-App (UI auf Deutsch oder Englisch). Sie schlägt dir einen Plan für 2× oder 3× Gym pro Woche vor, zeigt zu **jeder Übung Bilder mit dem Gerät**, speichert deine Gewichte und Läufe lokal auf dem iPhone und zeigt ein Dashboard mit geschätztem Kalorienverbrauch. Gebaut für die Installation über Xcode mit kostenlosem Apple-Account – inkl. Erinnerung, bevor die 7-Tage-Signatur abläuft, und automatischen Backups.
 
 ---
 
@@ -36,14 +36,20 @@ I've been going to the gym for years but I'm terrible with exercise and machine 
 - **Fully editable plans** – reorder, add, remove, change sets & rep ranges, **swap an exercise** for a suitable alternative (e.g. the machine is taken).
 - **Workout logging** – weight & reps per set (accepts `62,5` and `62.5`), check off sets, add/remove sets, add exercises on the fly. Interrupted workouts are kept and can be resumed.
 - **Progression coach** (double progression) – hit the top of your rep range in every set → the app suggests the next weight. Shows "last time" values for every exercise.
+- **Automatic deload** – three sessions at the same weight without more reps → the app suggests ~10 % less, then you build back up.
+- **Plate calculator** for barbell exercises – shows which plates go on each side of a 20 kg bar, drawn in the plate colors.
 - **Personal records** – estimated 1RM (Epley) per set, badge on new records, PR summary after each workout.
 - **Rest timer** with ±15 s, haptics and a notification when you're in another app.
+- **Swap an exercise mid-workout** (machine taken) – weights and reps stay.
+- **Everything stays editable** – correct weights and reps of past workouts, add or remove sets and exercises, swap an exercise, change date and duration. Log a workout afterwards if you trained without your phone. Records and suggestions use the corrected history.
 
 ### Exercise library (50 curated exercises)
-- **Two photos per exercise (start & end position, with the machine)** that cross-fade like a GIF.
+- **Two photos per exercise (start & end position, with the machine)** that cross-fade like a GIF – pause, jump to start or end position, or open fullscreen with pinch-to-zoom.
+- **Body map** – front and back figure with the primary and secondary muscles highlighted.
+- Filter the library by equipment (machine, cable, dumbbell, …).
 - German names + original English name, muscles worked, equipment, 3 short form cues.
 - **"Mein Gerät"** – save your machine settings (`Sitz 4 · Lehne 2`) and take **your own photo** of the machine in your gym. It's shown in the workout instead of the stock photo.
-- Per-exercise **progress chart** (top weight & estimated 1RM) and history.
+- Per-exercise **progress chart** (top weight & estimated 1RM), history and **rep records** (heaviest weight per rep count).
 
 ### Running
 - Log date, distance, duration, type (easy, tempo, intervals, long run, race, treadmill), avg. heart rate, feeling, notes.
@@ -52,8 +58,9 @@ I've been going to the gym for years but I'm terrible with exercise and machine 
 ### Dashboard
 - Weekly goal rings (gym & runs), **streak** of weeks in which you hit your gym goal.
 - **Estimated calories per day / week** – stacked chart of base metabolism, gym and running (tap a bar for details).
-- Sets per muscle group this week (with the 10–20 sets guideline).
-- Body-weight trend, all-time totals (workouts, runs, km, tonnage) and records of the last 30 days.
+- **Muscle map**: weekly sets per muscle (secondary muscles count half) or recovery (< 48 h, ready, not trained for over a week), plus sets per muscle group with the 10–20 sets guideline.
+- **Activity heatmap** of the last 18 weeks (gym & runs).
+- Body-weight trend (tap an entry to edit or swipe to delete), all-time totals (workouts, runs, km, tonnage) and records of the last 30 days.
 
 ### Built for free Xcode provisioning
 - **Data survives the weekly re-install** (see below).
@@ -68,7 +75,7 @@ I've been going to the gym for years but I'm terrible with exercise and machine 
 | What | Where | Survives Xcode re-run? |
 |---|---|---|
 | All data (SwiftData / SQLite) | App container › Application Support | yes – Xcode installs *over* the existing app |
-| Auto backups (`IronLog-latest.json`, `IronLog-YYYY-MM-DD.json`) | App container › Documents/Backups (Files app: *Auf meinem iPhone › IronLog*) | yes |
+| Auto backups (`RepFolio-latest.json`, `RepFolio-YYYY-MM-DD.json`) | App container › Documents/Backups (Files app: *Auf meinem iPhone › RepFolio*) | yes |
 | Exported backup | wherever you put it (iCloud Drive, Mac) | even if the app is deleted |
 
 With a free Apple ID the app's **signature** expires after 7 days – the app then won't open, but **its data stays on the phone**. Plug in the iPhone, press ▶︎ in Xcode, done. You only lose data if you
@@ -104,7 +111,14 @@ BUNDLE_ID_PREFIX = de.yourname    // anything unique → bundle id de.yourname.R
 ```
 `Signing.xcconfig` is in `.gitignore`, so your Team ID never ends up on GitHub.
 
-> **Where's my Team ID?** Easiest way: open the project, select the *RepFolio* target › *Signing & Capabilities*, pick your "(Personal Team)", copy the 10-character ID Xcode shows, put it into `Signing.xcconfig`, then set the Team dropdown back to **None**. (Otherwise Xcode writes the ID into `project.pbxproj` – the pre-commit check below catches that.)
+> **Where's my Team ID?** Sign in once under *Xcode › Settings › Accounts*, then run
+> `defaults read com.apple.dt.Xcode IDEProvisioningTeamByIdentifier | grep teamID` – the 10-character value is your Team ID.
+> (Alternatively: Keychain Access › your "Apple Development" certificate › *Organizational Unit*.)
+>
+> **Don't touch the Team dropdown** in *Signing & Capabilities*: choosing a team – or "None" – makes Xcode write
+> `DEVELOPMENT_TEAM` into `project.pbxproj`, and that value overrides `Signing.xcconfig`
+> (symptom: *"Signing for RepFolio requires a development team"*). If it happened, delete the `DEVELOPMENT_TEAM = …;`
+> lines from `project.pbxproj` – the pre-commit check below also blocks a committed Team ID.
 
 ### 3. Run on your iPhone
 1. Connect the iPhone via cable (first time), unlock it and tap *Trust*.
@@ -147,7 +161,8 @@ All calorie values are **estimates**, not medical measurements.
 | Run | `(MET(speed) − 1) × kg × hours`, MET interpolated from the *Compendium of Physical Activities* (e.g. 10 km/h ≈ 10 MET) |
 | Day total | daily base + gym + runs (the "− 1 MET" avoids counting resting energy twice) |
 | Estimated 1RM | Epley: `weight × (1 + reps / 30)` |
-| Progression | double progression: all working sets ≥ top of the rep range → + exercise-specific increment (1–5 kg) |
+| Progression | double progression: all working sets ≥ top of the rep range → + exercise-specific increment (1–5 kg); 3 sessions at the same weight without more reps → deload to ~90 % |
+| Plates per side | `(weight − 20 kg bar) / 2`, filled greedily with 25 / 20 / 15 / 10 / 5 / 2.5 / 1.25 kg plates |
 
 ---
 
@@ -192,7 +207,7 @@ Edit `RepFolio/Services/PlanTemplates.swift`. Existing installs keep their (poss
 - Apple Health import/export for runs and body weight
 - Home-screen widget with the next workout and weekly rings
 - Supersets and warm-up set calculator
-- Plate calculator for barbell exercises
+- CSV import from Strong / Hevy
 
 Pull requests welcome.
 

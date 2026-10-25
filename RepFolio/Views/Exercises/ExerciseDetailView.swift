@@ -47,9 +47,7 @@ struct ExerciseDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                ExerciseImageView(exercise: exercise, customPhoto: note?.customPhoto, preferCustom: showOwnPhoto, cornerRadius: 16)
-                    .frame(height: 240)
-                    .frame(maxWidth: .infinity)
+                ExerciseMediaViewer(exercise: exercise, customPhoto: note?.customPhoto, showOwnPhoto: showOwnPhoto)
                 if note?.customPhoto != nil {
                     Picker("Bild", selection: $showOwnPhoto) {
                         Text("Anleitung").tag(false)
@@ -69,15 +67,7 @@ struct ExerciseDetailView: View {
                     Tag(text: exercise.groupName, symbol: ExerciseCatalog.groupSymbols[exercise.group] ?? "circle")
                 }
 
-                Card(title: "Muskeln", symbol: "figure.strengthtraining.traditional") {
-                    VStack(alignment: .leading, spacing: 6) {
-                        LabeledContent("Primär", value: exercise.primaryMusclesText)
-                        if !exercise.secondaryMuscles.isEmpty {
-                            LabeledContent("Sekundär", value: exercise.secondaryMusclesText)
-                        }
-                    }
-                    .font(.subheadline)
-                }
+                ExerciseMuscleCard(exercise: exercise)
 
                 if !exercise.howTo.isEmpty {
                     Card(title: "So geht's", symbol: "list.number") {
@@ -135,6 +125,8 @@ struct ExerciseDetailView: View {
                 }
 
                 progressSection
+
+                RepRecordsCard(history: history)
 
                 // In English the original instructions are already shown above.
                 if !isEnglish {

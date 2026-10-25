@@ -182,7 +182,7 @@ struct PlanExerciseEditor: View {
                     Stepper("Max. Wiederholungen: \(planExercise.repMax)", value: $planExercise.repMax, in: planExercise.repMin...60)
                 }
                 Section {
-                    Text("Doppelte Progression: Schaffst du in allen Sätzen die max. Wiederholungen, schlägt die App beim nächsten Mal mehr Gewicht vor.")
+                    Text("Doppelte Progression: Schaffst du in allen Sätzen die max. Wiederholungen, schlägt die App beim nächsten Mal mehr Gewicht vor. Kommst du 3 Trainings lang nicht weiter, schlägt sie einen Deload (ca. −10 %) vor.")
                         .font(.footnote).foregroundStyle(.secondary)
                 }
             }
@@ -207,16 +207,22 @@ struct ExercisePickerView: View {
     var suggestions: [Exercise] = []
     let onPick: (Exercise) -> Void
     @State private var search = ""
+    @State private var equipment: String?
 
     var body: some View {
         NavigationStack {
             List {
-                if search.isEmpty && !suggestions.isEmpty {
+                Section {
+                    EquipmentFilter(selection: $equipment)
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                }
+                if search.isEmpty && equipment == nil && !suggestions.isEmpty {
                     Section("Passende Alternativen") {
                         ForEach(suggestions) { ex in row(ex) }
                     }
                 }
-                ForEach(ExerciseCatalog.shared.grouped(matching: search)) { group in
+                ForEach(ExerciseCatalog.shared.grouped(matching: search, equipment: equipment)) { group in
                     Section(CatalogText.group(group.group)) {
                         ForEach(group.items) { ex in row(ex) }
                     }

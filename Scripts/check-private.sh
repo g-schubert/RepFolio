@@ -15,9 +15,9 @@ fi
 
 # 2) Never commit backups / exports / databases.
 staged=$(git diff --cached --name-only || true)
-if echo "$staged" | grep -qE '(RepFolio-.*\.json|\.csv|\.store|\.sqlite|Signing\.xcconfig)$'; then
+if echo "$staged" | grep -qE '((RepFolio|IronLog)-.*\.json|\.csv|\.store|\.sqlite|Signing\.xcconfig)$'; then
   echo "✋ You are about to commit personal data or signing config:"
-  echo "$staged" | grep -E '(RepFolio-.*\.json|\.csv|\.store|\.sqlite|Signing\.xcconfig)$' | sed 's/^/   /'
+  echo "$staged" | grep -E '((RepFolio|IronLog)-.*\.json|\.csv|\.store|\.sqlite|Signing\.xcconfig)$' | sed 's/^/   /'
   fail=1
 fi
 

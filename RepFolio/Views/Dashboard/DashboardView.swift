@@ -14,6 +14,9 @@ struct DashboardView: View {
 
     @State private var selectedDay: Date?
     @State private var addingWeight = false
+    @State private var muscleMode = MuscleMode.volume
+
+    private enum MuscleMode: Hashable { case volume, recovery }
 
     private let cal = Cal.shared
 
@@ -67,6 +70,8 @@ struct DashboardView: View {
             energySection(profile)
 
             muscleSection(gymWeek: gymWeek)
+
+            ActivityHeatmap(sessions: sessions, runs: runs)
 
             weightSection
 
@@ -191,21 +196,56 @@ struct DashboardView: View {
         let data = ExerciseCatalog.groupOrder.filter { $0 != "Sonstiges" }
             .map { MuscleSets(group: CatalogText.group($0), sets: counts[$0] ?? 0) }
 
-        Card(title: "Sätze pro Muskelgruppe (Woche)", symbol: "figure.strengthtraining.traditional") {
-            if gymWeek.isEmpty {
-                Text("Diese Woche noch kein Gym-Training.").font(.subheadline).foregroundStyle(.secondary)
-            } else {
-                Chart(data) { m in
-                    BarMark(x: .value("Sätze", m.sets), y: .value("Gruppe", m.group))
-                        .foregroundStyle(Color.chartGym)
-                        .cornerRadius(4)
-                        .annotation(position: .trailing) {
-                            Text("\(m.sets)").font(.caption2).foregroundStyle(.secondary)
-                        }
+        Card(title: "Muskeln", symbol: "figure.strengthtraining.traditional") {
+            Picker("Ansicht", selection: $muscleMode) {
+                Text("Volumen (Woche)").tag(MuscleMode.volume)
+                Text("Erholung").tag(MuscleMode.recovery)
+            }
+            .pickerStyle(.segmented)
+
+            switch muscleMode {
+            case .volume:
+                let perMuscle = MuscleStats.sets(in: gymWeek)
+                BodyMapView(colors: perMuscle.mapValues(MuscleStats.volumeColor))
+                    .frame(height: 190)
+                HStack(spacing: 14) {
+                    LegendDot(color: MuscleStats.volumeColor(0), text: "0 Sätze")
+                    LegendDot(color: MuscleStats.volumeColor(5), text: "5")
+                    LegendDot(color: MuscleStats.volumeColor(10), text: "10+")
                 }
-                .chartXAxis(.hidden)
-                .frame(height: CGFloat(data.count) * 28)
-                Text("Richtwert für Muskelaufbau: ca. 10–20 Sätze pro Muskelgruppe und Woche.")
+                .frame(maxWidth: .infinity)
+                if gymWeek.isEmpty {
+                    Text("Diese Woche noch kein Gym-Training.").font(.subheadline).foregroundStyle(.secondary)
+                } else {
+                    Chart(data) { m in
+                        BarMark(x: .value("Sätze", m.sets), y: .value("Gruppe", m.group))
+                            .foregroundStyle(Color.chartGym)
+                            .cornerRadius(4)
+                            .annotation(position: .trailing) {
+                                Text("\(m.sets)").font(.caption2).foregroundStyle(.secondary)
+                            }
+                    }
+                    .chartXAxis(.hidden)
+                    .frame(height: CGFloat(data.count) * 28)
+                }
+                Text("Richtwert für Muskelaufbau: ca. 10–20 Sätze pro Muskelgruppe und Woche. Hilfsmuskeln zählen als halber Satz.")
+                    .font(.caption2).foregroundStyle(.tertiary)
+            case .recovery:
+                let recovery = MuscleStats.recovery(sessions: sessions)
+                BodyMapView(colors: recovery.mapValues(\.color))
+                    .frame(height: 190)
+                HStack(spacing: 14) {
+                    LegendDot(color: MuscleStats.Recovery.recovering.color, text: "< 48 h")
+                    LegendDot(color: MuscleStats.Recovery.ready.color, text: "Bereit")
+                    LegendDot(color: MuscleStats.Recovery.untrained.color, text: "> 7 Tage")
+                }
+                .frame(maxWidth: .infinity)
+                let stale = recovery.filter { $0.value == .untrained }.keys.sorted().map(Muscle.name)
+                if !stale.isEmpty {
+                    Text("Länger nicht trainiert: \(stale.joined(separator: ", "))")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+                Text("Nach Hauptmuskel der Übung. Ein Muskel braucht nach hartem Training etwa 48 Stunden.")
                     .font(.caption2).foregroundStyle(.tertiary)
             }
         }
@@ -257,7 +297,7 @@ struct DashboardView: View {
             NavigationLink {
                 BodyWeightListView()
             } label: {
-                Text("Alle Einträge").font(.caption)
+                Text("Alle Einträge – bearbeiten oder löschen").font(.caption)
             }
         }
     }

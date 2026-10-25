@@ -11,4 +11,4 @@ Personal iOS gym & running tracker. SwiftUI + SwiftData + Swift Charts, iOS 17+,
 - Chart colors: `Color.chartGym` / `.chartRun` / `.chartBase` (fixed identity, light/dark variants).
 
 ## Privacy (public repo)
-Never commit on your own! The commit and push is up to the developer! But always check that no personal data or signing info: `Config/Signing.xcconfig`, backups (`IronLog-*.json`), CSV exports, `*.store`/`*.sqlite`, or a `DEVELOPMENT_TEAM` value in `project.pbxproj`. `Scripts/check-private.sh` is inside the commit scope. Check this before finishing the code.
+Never commit on your own! The commit and push is up to the developer! But always check that no personal data or signing info: `Config/Signing.xcconfig`, backups (`RepFolio-*.json`, older `IronLog-*.json`), CSV exports, `*.store`/`*.sqlite`, or a `DEVELOPMENT_TEAM` value in `project.pbxproj`. `Scripts/check-private.sh` is inside the commit scope. Check this before finishing the code.

@@ -95,6 +95,7 @@ enum PlanTemplates {
         case "Drücken & Ziehen": L("Drücken & Ziehen")
         case "Beine, Gesäß & Bauch": L("Beine, Gesäß & Bauch")
         case "Alles einmal, andere Winkel": L("Alles einmal, andere Winkel")
+        case WorkoutFactory.freeWorkoutName: L("Freies Training")
         default: stored
         }
     }

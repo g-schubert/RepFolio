@@ -10,33 +10,41 @@ struct ExerciseImageView: View {
     var preferCustom: Bool = true
     var interval: Double = 1.3
     var cornerRadius: CGFloat = 12
+    /// Shows one frame (start / end position) instead of the loop.
+    var fixedFrame: Int? = nil
+    var contentMode: ContentMode = .fill
 
     var body: some View {
         Group {
             if preferCustom, let data = customPhoto, let img = UIImage(data: data) {
-                Image(uiImage: img).resizable().scaledToFill()
+                Image(uiImage: img).resizable().aspectRatio(contentMode: contentMode)
             } else if exercise.images.isEmpty {
                 ZStack {
                     Color.secondary.opacity(0.15)
                     Image(systemName: "dumbbell").font(.largeTitle).foregroundStyle(.secondary)
                 }
+            } else if let fixedFrame {
+                frames(showing: min(fixedFrame, exercise.images.count - 1))
             } else {
                 TimelineView(.periodic(from: .now, by: interval)) { context in
-                    let idx = Int(context.date.timeIntervalSinceReferenceDate / interval) % exercise.images.count
-                    ZStack {
-                        ForEach(Array(exercise.images.enumerated()), id: \.offset) { i, name in
-                            if let img = ExerciseImageStore.image(named: name) {
-                                Image(uiImage: img).resizable().scaledToFill()
-                                    .opacity(i == idx ? 1 : 0)
-                            }
-                        }
-                    }
-                    .animation(.easeInOut(duration: 0.35), value: idx)
+                    frames(showing: Int(context.date.timeIntervalSinceReferenceDate / interval) % exercise.images.count)
                 }
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
         .accessibilityLabel(Text("Bild: \(exercise.name)"))
+    }
+
+    private func frames(showing idx: Int) -> some View {
+        ZStack {
+            ForEach(Array(exercise.images.enumerated()), id: \.offset) { i, name in
+                if let img = ExerciseImageStore.image(named: name) {
+                    Image(uiImage: img).resizable().aspectRatio(contentMode: contentMode)
+                        .opacity(i == idx ? 1 : 0)
+                }
+            }
+        }
+        .animation(.easeInOut(duration: 0.35), value: idx)
     }
 }
 
