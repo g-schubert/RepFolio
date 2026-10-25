@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+#  RepFolio – .gitignore
+#  Goal: the repo contains only the app. Your personal data
+#  (workouts, weights, runs, body weight, calories, photos) and
+#  your Apple signing info never get pushed.
+# ─────────────────────────────────────────────────────────────
+
+# ── Personal signing config (Team ID, bundle id) ──
+Config/Signing.xcconfig
+*.mobileprovision
+*.p12
+*.cer
+*.certSigningRequest
+
+# ── Personal data / exports from the app ──
+# Backups exported from the app (Profil › Daten & Backup) – keep them OUT of the repo.
+RepFolio-*.json
+RepFolio-Backup-*.json
+*.RepFolio.json
+RepFolio-Saetze.csv
+RepFolio-Laeufe.csv
+Backups/
+backups/
+Exports/
+exports/
+private/
+PersonalData/
+# SwiftData / SQLite stores (e.g. copied from the simulator)
+*.store
+*.store-shm
+*.store-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# ── Xcode user state ──
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+RepFolio.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+RepFolio.xcodeproj/project.xcworkspace/xcuserdata/
+
+# ── Build output ──
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.hmap
+*.xcarchive
+
+# ── Swift Package Manager ──
+.build/
+.swiftpm/
+Package.resolved
+
+# ── macOS / editors ──
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*~
+.vscode/
+.idea/
+
+# ── Python helper script cache ──
+__pycache__/
+*.pyc
+Scripts/.cache/
+
+# ── Local Claude settings (personal) ──
+.claude/settings.local.json

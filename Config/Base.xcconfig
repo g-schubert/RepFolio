@@ -1,0 +1,10 @@
+// Base build settings for RepFolio.
+// Do NOT put your personal Team ID here – copy Signing.example.xcconfig to Signing.xcconfig instead
+// (Signing.xcconfig is git-ignored, so your Apple Team ID / bundle id never ends up in the public repo).
+
+BUNDLE_ID_PREFIX = com.example
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).RepFolio
+
+// Optional include – the build works without it, but signing on a real iPhone needs it.
+#include? "Signing.xcconfig"

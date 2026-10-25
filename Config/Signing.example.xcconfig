@@ -1,0 +1,13 @@
+// 1. Copy this file:   cp Config/Signing.example.xcconfig Config/Signing.xcconfig
+// 2. Fill in your values below. Signing.xcconfig is git-ignored.
+//
+// DEVELOPMENT_TEAM: Xcode › Settings › Accounts › (your Apple ID) › Team "… (Personal Team)".
+//                   The 10-character ID is shown in Keychain Access under
+//                   "Apple Development: <you> (XXXXXXXXXX)" → Organizational Unit, or simply select the
+//                   team once in Xcode (Signing & Capabilities) and copy the value that appears.
+// BUNDLE_ID_PREFIX: Something unique to you, e.g. de.yourname  →  bundle id becomes de.yourname.RepFolio
+//
+// IMPORTANT: Keep the bundle id the same forever. A new bundle id = a new app = empty database.
+
+DEVELOPMENT_TEAM = ABCDE12345
+BUNDLE_ID_PREFIX = de.yourname

@@ -1,0 +1,3335 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    ":" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : ":"
+          }
+        }
+      }
+    },
+    "„Alltag“ beschreibt deine Aktivität ohne Sport – Training und Läufe werden separat dazugerechnet." : {
+
+    },
+    "%@ · %@ · %lld Sätze · %@ t" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ · %2$@ · %#@sets@ · %4$@ t"
+          },
+          "substitutions" : {
+            "sets" : {
+              "argNum" : 3,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Satz"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Sätze"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Sätze"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ · %2$@ · %#@sets@ · %4$@ t"
+          },
+          "substitutions" : {
+            "sets" : {
+              "argNum" : 3,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg set"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg sets"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg sets"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%@ × %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ × %2$lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ × %2$lld"
+          }
+        }
+      }
+    },
+    "%@ am %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ am %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ on %2$@"
+          }
+        }
+      }
+    },
+    "%@ starten" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Start %@"
+          }
+        }
+      }
+    },
+    "%@ t bewegt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%@ t lifted"
+          }
+        }
+      }
+    },
+    "%@: %@ – Gym %@, Laufen %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@ – Gym %3$@, Laufen %4$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@: %2$@ – Gym %3$@, Running %4$@"
+          }
+        }
+      }
+    },
+    "%@%@ kg in 30 Tagen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@%2$@ kg in 30 Tagen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@%2$@ kg in 30 days"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld / %lld Läufe" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld Läufe"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$lld / %2$lld runs"
+          }
+        }
+      }
+    },
+    "%lld / %lld Sätze" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld Sätze"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$lld / %2$lld sets"
+          }
+        }
+      }
+    },
+    "%lld × %lld–%lld Wdh. · %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld × %2$lld–%3$lld Wdh. · %4$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$lld × %2$lld–%3$lld reps · %4$@"
+          }
+        }
+      }
+    },
+    "%lld Sätze sind noch nicht abgehakt – nur abgehakte Sätze werden gespeichert." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld Satz ist noch nicht abgehakt – nur abgehakte Sätze werden gespeichert."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld Sätze sind noch nicht abgehakt – nur abgehakte Sätze werden gespeichert."
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld Sätze sind noch nicht abgehakt – nur abgehakte Sätze werden gespeichert."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld set isn’t checked off yet – only checked-off sets are saved."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld sets aren’t checked off yet – only checked-off sets are saved."
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "%lld sets aren’t checked off yet – only checked-off sets are saved."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld Übungen\n~%lld min" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%#@exercises@\n~%2$lld min"
+          },
+          "substitutions" : {
+            "exercises" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Übung"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Übungen"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Übungen"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%#@exercises@\n~%2$lld min"
+          },
+          "substitutions" : {
+            "exercises" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg exercise"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg exercises"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg exercises"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld Wo. Serie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%lld wk streak"
+          }
+        }
+      }
+    },
+    "+15" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "+15"
+          }
+        }
+      }
+    },
+    "−15" : {
+
+    },
+    "1RM %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "1RM %@"
+          }
+        }
+      }
+    },
+    "2×" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "2×"
+          }
+        }
+      }
+    },
+    "2× pro Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "2× a week"
+          }
+        }
+      }
+    },
+    "3×" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "3×"
+          }
+        }
+      }
+    },
+    "3× pro Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "3× a week"
+          }
+        }
+      }
+    },
+    "ab 3 km" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "3 km+"
+          }
+        }
+      }
+    },
+    "Abbrechen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "Abduktoren (Hüfte außen)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Abductors (outer hip)"
+          }
+        }
+      }
+    },
+    "Adduktoren (Oberschenkel innen)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Adductors (inner thigh)"
+          }
+        }
+      }
+    },
+    "Aktiv (viel auf den Beinen)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Active (on your feet a lot)"
+          }
+        }
+      }
+    },
+    "aktiv %@ · Ø %@/Tag" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "aktiv %1$@ · Ø %2$@/Tag"
+          }
+        }
+      }
+    },
+    "Alle aktuellen Daten werden durch das Backup vom %@ ersetzt." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "All current data will be replaced with the backup from %@."
+          }
+        }
+      }
+    },
+    "Alle Daten löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete All Data"
+          }
+        }
+      }
+    },
+    "Alle Einträge" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "All Entries"
+          }
+        }
+      }
+    },
+    "Alle Sätze ≥ %lld Wdh. geschafft – heute %@ probieren!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Alle Sätze ≥ %1$lld Wdh. geschafft – heute %2$@ probieren!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "All sets hit ≥ %1$lld reps – try %2$@ today!"
+          }
+        }
+      }
+    },
+    "Alles einmal, andere Winkel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Everything once, different angles"
+          }
+        }
+      }
+    },
+    "Alltag" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Everyday activity"
+          }
+        }
+      }
+    },
+    "Als CSV exportieren …" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Export as CSV …"
+          }
+        }
+      }
+    },
+    "Als Nächstes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Up next"
+          }
+        }
+      }
+    },
+    "Anleitung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Guide"
+          }
+        }
+      }
+    },
+    "App läuft bald ab" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "App expires soon"
+          }
+        }
+      }
+    },
+    "App-Signatur (Xcode)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "App signature (Xcode)"
+          }
+        }
+      }
+    },
+    "App-Signatur gültig" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "App signature valid"
+          }
+        }
+      }
+    },
+    "Arme" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Arms"
+          }
+        }
+      }
+    },
+    "Art" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Type"
+          }
+        }
+      }
+    },
+    "Ausführung: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "How to: %@"
+          }
+        }
+      }
+    },
+    "Automatisch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Automatic"
+          }
+        }
+      }
+    },
+    "Backup exportieren …" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Export Backup …"
+          }
+        }
+      }
+    },
+    "Backup fehlgeschlagen – es wurden keine Daten gelöscht." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Backup failed – no data was deleted."
+          }
+        }
+      }
+    },
+    "Backup gefunden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Backup Found"
+          }
+        }
+      }
+    },
+    "Backup gespeichert (Dateien-App › Auf meinem iPhone › RepFolio › Backups)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Backup saved (Files app › On My iPhone › RepFolio › Backups)."
+          }
+        }
+      }
+    },
+    "Backup importieren …" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Import Backup …"
+          }
+        }
+      }
+    },
+    "Backup wiederhergestellt: %lld Trainings, %lld Läufe." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Backup wiederhergestellt: %1$lld Trainings, %2$lld Läufe."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Backup restored. Workouts: %1$lld, runs: %2$lld."
+          }
+        }
+      }
+    },
+    "Backup wiederherstellen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Restore Backup?"
+          }
+        }
+      }
+    },
+    "Bauch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Abs"
+          }
+        }
+      }
+    },
+    "Beenden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Finish"
+          }
+        }
+      }
+    },
+    "Beinbeuger (Oberschenkel hinten)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Hamstrings (back of thigh)"
+          }
+        }
+      }
+    },
+    "Beine" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Legs"
+          }
+        }
+      }
+    },
+    "Beine, Gesäß & Bauch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Legs, Glutes & Abs"
+          }
+        }
+      }
+    },
+    "Beinpresse · Brust · Latzug" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Leg Press · Chest · Lat Pulldown"
+          }
+        }
+      }
+    },
+    "Bestes Gewicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Best Weight"
+          }
+        }
+      }
+    },
+    "Bild" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Image"
+          }
+        }
+      }
+    },
+    "Bild: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Image: %@"
+          }
+        }
+      }
+    },
+    "Bilder & Text: Free Exercise DB (Public Domain)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Images & text: Free Exercise DB (Public Domain)"
+          }
+        }
+      }
+    },
+    "Bis %@. Du wirst rechtzeitig erinnert." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Valid until %@. You’ll be reminded in time."
+          }
+        }
+      }
+    },
+    "Bizeps" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Biceps"
+          }
+        }
+      }
+    },
+    "bpm" : {
+
+    },
+    "Brust" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Chest"
+          }
+        }
+      }
+    },
+    "CSV-Export fehlgeschlagen: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "CSV export failed: %@"
+          }
+        }
+      }
+    },
+    "Darstellung & Sprache" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Appearance & language"
+          }
+        }
+      }
+    },
+    "Datei konnte nicht gelesen werden: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Couldn’t read file: %@"
+          }
+        }
+      }
+    },
+    "Daten & Backup" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Data & backup"
+          }
+        }
+      }
+    },
+    "Datum" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date"
+          }
+        }
+      }
+    },
+    "Dauer" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Duration"
+          }
+        }
+      }
+    },
+    "Dauer: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Duration: %@"
+          }
+        }
+      }
+    },
+    "davon aktiv %@" : {
+
+    },
+    "Dein Plan" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Your plan"
+          }
+        }
+      }
+    },
+    "Dein Wochenziel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Your weekly goal"
+          }
+        }
+      }
+    },
+    "Deine Änderungen am Plan gehen verloren. Trainingsverlauf und Gewichte bleiben erhalten." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Your changes to the plan will be lost. Your history and weights are kept."
+          }
+        }
+      }
+    },
+    "Deine Daten liegen nur auf diesem iPhone. Exportiere ab und zu ein Backup in iCloud Drive oder auf deinen Mac – dann ist nichts verloren, selbst wenn die App gelöscht wird." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Your data is stored only on this iPhone. Export a backup to iCloud Drive or your Mac every now and then – that way nothing is lost, even if the app is deleted."
+          }
+        }
+      }
+    },
+    "Die Datenbank ist leer, aber es gibt ein automatisches Backup vom %@. Daten daraus wiederherstellen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "The database is empty, but there’s an automatic backup from %@. Restore your data from it?"
+          }
+        }
+      }
+    },
+    "Diese Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "This week"
+          }
+        }
+      }
+    },
+    "Diese Woche (KW %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "This week (Week %lld)"
+          }
+        }
+      }
+    },
+    "Diese Woche noch kein Gym-Training." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No gym workouts yet this week."
+          }
+        }
+      }
+    },
+    "Dieser Monat" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "This month"
+          }
+        }
+      }
+    },
+    "Distanz (km)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Distance (km)"
+          }
+        }
+      }
+    },
+    "Doppelte Progression: Schaffst du in allen Sätzen die max. Wiederholungen, schlägt die App beim nächsten Mal mehr Gewicht vor." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Double progression: If you hit the max reps in every set, the app suggests more weight next time."
+          }
+        }
+      }
+    },
+    "Drücken & Ziehen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Push & Pull"
+          }
+        }
+      }
+    },
+    "Dunkel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dark"
+          }
+        }
+      }
+    },
+    "Eigenes Foto löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete Your Photo"
+          }
+        }
+      }
+    },
+    "Ein paar Angaben für deinen Plan und die Kalorienschätzung. Alles bleibt lokal auf deinem iPhone." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "A few details for your plan and calorie estimates. Everything stays on your iPhone."
+          }
+        }
+      }
+    },
+    "Einstellung, z. B. Sitz 4 · Lehne 2" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Setting, e.g. seat 4 · back 2"
+          }
+        }
+      }
+    },
+    "Eintragen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Log"
+          }
+        }
+      }
+    },
+    "Entfernen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Remove"
+          }
+        }
+      }
+    },
+    "Erinnerung vor Ablauf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Remind Before Expiry"
+          }
+        }
+      }
+    },
+    "Erledigt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "Ersetzen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Replace"
+          }
+        }
+      }
+    },
+    "Erstes Mal: wähle ein Gewicht für ca. %lld saubere Wiederholungen." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Erstes Mal: wähle ein Gewicht für ca. %lld saubere Wiederholung."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Erstes Mal: wähle ein Gewicht für ca. %lld saubere Wiederholungen."
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Erstes Mal: wähle ein Gewicht für ca. %lld saubere Wiederholungen."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "First time: pick a weight for about %lld clean rep."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "First time: pick a weight for about %lld clean reps."
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "First time: pick a weight for about %lld clean reps."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Export fehlgeschlagen: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Export failed: %@"
+          }
+        }
+      }
+    },
+    "Fertig" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "Fortschritt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Progress"
+          }
+        }
+      }
+    },
+    "Foto aufnehmen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Take Photo"
+          }
+        }
+      }
+    },
+    "Foto wählen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Choose Photo"
+          }
+        }
+      }
+    },
+    "Fotografiere das Gerät in deinem Gym – dann erkennst du es sofort wieder." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Take a photo of the machine at your gym so you’ll recognize it right away."
+          }
+        }
+      }
+    },
+    "Ganzkörper" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Full Body"
+          }
+        }
+      }
+    },
+    "Ganzkörper A" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Full Body A"
+          }
+        }
+      }
+    },
+    "Ganzkörper A/B im Wechsel: jeder Muskel wird 2× pro Woche trainiert – ideal mit 1–2 Läufen dazu." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Alternate Full Body A and B: every muscle is trained 2× a week – ideal with 1–2 runs on the side."
+          }
+        }
+      }
+    },
+    "Ganzkörper B" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Full Body B"
+          }
+        }
+      }
+    },
+    "Geburtsjahr: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Birth year: %@"
+          }
+        }
+      }
+    },
+    "Gefühl" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Feeling"
+          }
+        }
+      }
+    },
+    "Gesamt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "All time"
+          }
+        }
+      }
+    },
+    "Gesäß" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Glutes"
+          }
+        }
+      }
+    },
+    "Geschätztes 1RM" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Estimated 1RM"
+          }
+        }
+      }
+    },
+    "Geschlecht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sex"
+          }
+        }
+      }
+    },
+    "Gestartet %@ – tippen zum Fortsetzen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Started %@ – tap to continue"
+          }
+        }
+      }
+    },
+    "Gewicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Weight"
+          }
+        }
+      }
+    },
+    "Gewicht eintragen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Log Weight"
+          }
+        }
+      }
+    },
+    "Gewicht halten (%@) – Ziel: jeder Satz mind. %lld Wdh." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gewicht halten (%1$@) – Ziel: jeder Satz mind. %2$lld Wdh."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Keep the weight (%1$@) – goal: at least %2$lld reps per set."
+          }
+        }
+      }
+    },
+    "Gewicht hinzufügen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Add Weight"
+          }
+        }
+      }
+    },
+    "Gleiches Gewicht (%@) – versuche je Satz +1 Wdh. bis %lld." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gleiches Gewicht (%1$@) – versuche je Satz +1 Wdh. bis %2$lld."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Same weight (%1$@) – try +1 rep per set, up to %2$lld."
+          }
+        }
+      }
+    },
+    "Größe: %lld cm" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Height: %lld cm"
+          }
+        }
+      }
+    },
+    "Grundumsatz" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Base metabolism"
+          }
+        }
+      }
+    },
+    "Grundumsatz nach Mifflin-St Jeor × Alltagsfaktor %@; Training über MET-Werte. Nur eine grobe Schätzung." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Base metabolism via Mifflin-St Jeor × everyday activity factor %@; workouts via MET values. Just a rough estimate."
+          }
+        }
+      }
+    },
+    "Gruppe" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Group"
+          }
+        }
+      }
+    },
+    "Gültig bis" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Valid until"
+          }
+        }
+      }
+    },
+    "Gut" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Good"
+          }
+        }
+      }
+    },
+    "Gym" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Gym"
+          }
+        }
+      }
+    },
+    "Gym pro Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Gym per week"
+          }
+        }
+      }
+    },
+    "Hack Squat · Rudern · Schrägbank" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Hack Squat · Rows · Incline"
+          }
+        }
+      }
+    },
+    "Hell" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Light"
+          }
+        }
+      }
+    },
+    "Heute" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Today"
+          }
+        }
+      }
+    },
+    "Hi %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Hi %@"
+          }
+        }
+      }
+    },
+    "Hinweis" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Note"
+          }
+        }
+      }
+    },
+    "Intervalle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Intervals"
+          }
+        }
+      }
+    },
+    "iPhone an den Mac anschließen und in Xcode auf ▶︎ drücken. Deine Daten bleiben erhalten." : {
+
+    },
+    "RepFolio läuft in 3 Stunden ab" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "RepFolio Expires in 3 Hours"
+          }
+        }
+      }
+    },
+    "RepFolio läuft morgen ab" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "RepFolio Expires Tomorrow"
+          }
+        }
+      }
+    },
+    "Jetzt sichern" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Back Up Now"
+          }
+        }
+      }
+    },
+    "Kabelzug" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Cable"
+          }
+        }
+      }
+    },
+    "Kalorien (geschätzt)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calories (estimated)"
+          }
+        }
+      }
+    },
+    "Kalorienverbrauch (geschätzt)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calories burned (estimated)"
+          }
+        }
+      }
+    },
+    "Kalorienwerte sind Schätzungen und ersetzen keine medizinische Beratung." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calorie values are estimates and aren’t a substitute for medical advice."
+          }
+        }
+      }
+    },
+    "Kannst du jederzeit im Training-Tab umstellen." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "You can change this anytime in the Training tab."
+          }
+        }
+      }
+    },
+    "kcal" : {
+
+    },
+    "kg" : {
+
+    },
+    "Kilometer pro Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kilometers per week"
+          }
+        }
+      }
+    },
+    "km" : {
+
+    },
+    "Körpergewicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Body weight"
+          }
+        }
+      }
+    },
+    "Kurzhantel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dumbbell"
+          }
+        }
+      }
+    },
+    "Langer Lauf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Long Run"
+          }
+        }
+      }
+    },
+    "Langhantel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Barbell"
+          }
+        }
+      }
+    },
+    "Längster Lauf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Longest run"
+          }
+        }
+      }
+    },
+    "Latissimus (breiter Rücken)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lats (upper back width)"
+          }
+        }
+      }
+    },
+    "Lauf bearbeiten" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Edit Run"
+          }
+        }
+      }
+    },
+    "Lauf hinzufügen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Add Run"
+          }
+        }
+      }
+    },
+    "Lauf löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete Run"
+          }
+        }
+      }
+    },
+    "Laufband" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Treadmill"
+          }
+        }
+      }
+    },
+    "Läufe" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Runs"
+          }
+        }
+      }
+    },
+    "Läufe pro Woche: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Runs per week: %lld"
+          }
+        }
+      }
+    },
+    "Laufen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Running"
+          }
+        }
+      }
+    },
+    "Laufendes Training öffnen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Open Current Workout"
+          }
+        }
+      }
+    },
+    "Leicht aktiv" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lightly active"
+          }
+        }
+      }
+    },
+    "Letzte 7 Tage · tippe auf einen Balken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last 7 days · tap a bar"
+          }
+        }
+      }
+    },
+    "Letztes Auto-Backup" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last auto backup"
+          }
+        }
+      }
+    },
+    "Letztes Mal (%@): %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Letztes Mal (%1$@): %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last time (%1$@): %2$@"
+          }
+        }
+      }
+    },
+    "Letztes Training: gestern" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last workout: yesterday"
+          }
+        }
+      }
+    },
+    "Letztes Training: heute" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last workout: today"
+          }
+        }
+      }
+    },
+    "Letztes Training: vor %lld Tagen" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Letztes Training: vor %lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Letztes Training: vor %lld Tagen"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Letztes Training: vor %lld Tagen"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Last workout: %lld day ago"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Last workout: %lld days ago"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "machine_translated",
+                  "value" : "Last workout: %lld days ago"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Locker" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Easy"
+          }
+        }
+      }
+    },
+    "Los geht's" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Let’s Go"
+          }
+        }
+      }
+    },
+    "Löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "Löschen fehlgeschlagen: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete failed: %@"
+          }
+        }
+      }
+    },
+    "Männlich" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Male"
+          }
+        }
+      }
+    },
+    "Maschine" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Machine"
+          }
+        }
+      }
+    },
+    "Mäßig" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Meh"
+          }
+        }
+      }
+    },
+    "Max. Wiederholungen: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Max reps: %lld"
+          }
+        }
+      }
+    },
+    "Mehr" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "More"
+          }
+        }
+      }
+    },
+    "Mein Gerät" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "My machine"
+          }
+        }
+      }
+    },
+    "Min" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "min"
+          }
+        }
+      }
+    },
+    "Min. Wiederholungen: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Min reps: %lld"
+          }
+        }
+      }
+    },
+    "Minimieren" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Minimize"
+          }
+        }
+      }
+    },
+    "Mit einem kostenlosen Apple-Account läuft die App nach 7 Tagen ab. Einfach in Xcode erneut ▶︎ drücken – alle Daten bleiben erhalten, solange du die App nicht löschst." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "With a free Apple Account, the app expires after 7 days. Just press ▶︎ in Xcode again – all your data is kept as long as you don’t delete the app."
+          }
+        }
+      }
+    },
+    "Mittlerer Rücken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Middle back"
+          }
+        }
+      }
+    },
+    "Modus" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Mode"
+          }
+        }
+      }
+    },
+    "Muskeln" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Muscles"
+          }
+        }
+      }
+    },
+    "Nächstes Training" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Next workout"
+          }
+        }
+      }
+    },
+    "Nacken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Neck"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "Neu starten" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Start Fresh"
+          }
+        }
+      }
+    },
+    "Neue Rekorde 🏆" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "New PRs 🏆"
+          }
+        }
+      }
+    },
+    "Neuer Lauf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "New Run"
+          }
+        }
+      }
+    },
+    "Noch %lld Std. – bis %@. iPhone an den Mac, in Xcode ▶︎ drücken. Deine Daten bleiben erhalten." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Noch %1$lld Std. – bis %2$@. iPhone an den Mac, in Xcode ▶︎ drücken. Deine Daten bleiben erhalten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$lld h left – until %2$@. Connect your iPhone to the Mac and press ▶︎ in Xcode. Your data stays safe."
+          }
+        }
+      }
+    },
+    "Noch %lld Tag(e) – bis %@. iPhone an den Mac, in Xcode ▶︎ drücken. Deine Daten bleiben erhalten." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Noch %#@days@ – bis %2$@. iPhone an den Mac, in Xcode ▶︎ drücken. Deine Daten bleiben erhalten."
+          },
+          "substitutions" : {
+            "days" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Tag"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Tage"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg Tage"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%#@days@ left – until %2$@. Connect your iPhone to the Mac and press ▶︎ in Xcode. Your data stays safe."
+          },
+          "substitutions" : {
+            "days" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg day"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg days"
+                    }
+                  },
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "machine_translated",
+                      "value" : "%arg days"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Noch kein Training eingetragen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No workout logged yet"
+          }
+        }
+      }
+    },
+    "Noch keine Einträge" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No Entries Yet"
+          }
+        }
+      }
+    },
+    "Noch keine Einträge. Nach deinem ersten Training siehst du hier deine Entwicklung." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No entries yet. After your first workout, your progress shows up here."
+          }
+        }
+      }
+    },
+    "Noch keine Läufe" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No Runs Yet"
+          }
+        }
+      }
+    },
+    "Noch keine Trainings" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "No Workouts Yet"
+          }
+        }
+      }
+    },
+    "noch keins" : {
+
+    },
+    "Notiz" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Note"
+          }
+        }
+      }
+    },
+    "Notiz (Strecke, Wetter …)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Note (route, weather…)"
+          }
+        }
+      }
+    },
+    "Ø Puls" : {
+
+    },
+    "Oberkörper" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Upper Body"
+          }
+        }
+      }
+    },
+    "Oberkörper / Unterkörper / Ganzkörper: jeder Muskel 2× pro Woche, Beine nicht direkt vor dem Laufen." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Upper Body / Lower Body / Full Body: every muscle 2× a week, no legs right before running."
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "Okay" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Okay"
+          }
+        }
+      }
+    },
+    "Optional" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Optional"
+          }
+        }
+      }
+    },
+    "Originalanleitung (Englisch)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Original instructions (English)"
+          }
+        }
+      }
+    },
+    "Pace" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Pace"
+          }
+        }
+      }
+    },
+    "Passende Alternativen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Matching alternatives"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Rest"
+          }
+        }
+      }
+    },
+    "Pause beenden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "End Rest"
+          }
+        }
+      }
+    },
+    "Pause vorbei 💪" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Rest Over 💪"
+          }
+        }
+      }
+    },
+    "Plan 2× auf Standard zurücksetzen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Reset 2× Plan to Default"
+          }
+        }
+      }
+    },
+    "Plan 3× auf Standard zurücksetzen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Reset 3× Plan to Default"
+          }
+        }
+      }
+    },
+    "Plan zurücksetzen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Reset Plan?"
+          }
+        }
+      }
+    },
+    "Primär" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Primary"
+          }
+        }
+      }
+    },
+    "Profil" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Profile"
+          }
+        }
+      }
+    },
+    "Quadrizeps (Oberschenkel vorne)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Quadriceps (front of thigh)"
+          }
+        }
+      }
+    },
+    "Rekorde (30 T.)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "PRs (30 d)"
+          }
+        }
+      }
+    },
+    "Richtwert für Muskelaufbau: ca. 10–20 Sätze pro Muskelgruppe und Woche." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Guideline for muscle growth: about 10–20 sets per muscle group per week."
+          }
+        }
+      }
+    },
+    "Rücken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Back"
+          }
+        }
+      }
+    },
+    "Satz" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Set"
+          }
+        }
+      }
+    },
+    "Satz %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Set %lld"
+          }
+        }
+      }
+    },
+    "Satz abhaken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Check Off Set"
+          }
+        }
+      }
+    },
+    "Satz erledigt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Set done"
+          }
+        }
+      }
+    },
+    "Satz löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete Set"
+          }
+        }
+      }
+    },
+    "Sätze" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sets"
+          }
+        }
+      }
+    },
+    "Sätze & Wdh." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sets & Reps"
+          }
+        }
+      }
+    },
+    "Sätze & Wiederholungen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sets & Reps"
+          }
+        }
+      }
+    },
+    "Sätze pro Muskelgruppe (Woche)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sets per muscle group (week)"
+          }
+        }
+      }
+    },
+    "Sätze: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sets: %lld"
+          }
+        }
+      }
+    },
+    "Satzpause: %@ min" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Rest between sets: %@ min"
+          }
+        }
+      }
+    },
+    "Schnellste Pace" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Fastest pace"
+          }
+        }
+      }
+    },
+    "Schultern" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Shoulders"
+          }
+        }
+      }
+    },
+    "Sek" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "sec"
+          }
+        }
+      }
+    },
+    "Sekundär" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Secondary"
+          }
+        }
+      }
+    },
+    "Serie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Series"
+          }
+        }
+      }
+    },
+    "Sitzend (Büro)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Sedentary (office)"
+          }
+        }
+      }
+    },
+    "So geht's" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "How to"
+          }
+        }
+      }
+    },
+    "Sonstiges" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Other"
+          }
+        }
+      }
+    },
+    "Speichern" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "Speichern & beenden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Save & Finish"
+          }
+        }
+      }
+    },
+    "Sprache" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Language"
+          }
+        }
+      }
+    },
+    "Starke Leistung!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Great job!"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Start"
+          }
+        }
+      }
+    },
+    "Starte dein erstes Training im Tab „Training“." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Start your first workout in the “Training” tab."
+          }
+        }
+      }
+    },
+    "Std" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "h"
+          }
+        }
+      }
+    },
+    "Super" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Great"
+          }
+        }
+      }
+    },
+    "Tag" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Day"
+          }
+        }
+      }
+    },
+    "Tempo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Tempo"
+          }
+        }
+      }
+    },
+    "Tipp: Am besten morgens nach dem Aufstehen wiegen – dann sind die Werte vergleichbar." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Tip: Weigh yourself in the morning right after you get up – that way your values are comparable."
+          }
+        }
+      }
+    },
+    "Tippe auf +, um deinen ersten Lauf einzutragen." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Tap + to log your first run."
+          }
+        }
+      }
+    },
+    "Tippe auf eine Übung für Bild & Ausführung. Über ••• kannst du Sätze ändern oder die Übung gegen ein anderes Gerät tauschen (z. B. wenn es besetzt ist)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Tap an exercise for its image & how-to. Use ••• to change sets or swap the exercise for a different machine (e.g. if it’s taken)."
+          }
+        }
+      }
+    },
+    "Top-Gewicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Top weight"
+          }
+        }
+      }
+    },
+    "Training" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Training"
+          }
+        }
+      }
+    },
+    "Training & Ziele" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Training & goals"
+          }
+        }
+      }
+    },
+    "Training beenden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Finish Workout"
+          }
+        }
+      }
+    },
+    "Training beenden?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Finish Workout?"
+          }
+        }
+      }
+    },
+    "Training gespeichert" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Workout saved"
+          }
+        }
+      }
+    },
+    "Training läuft: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Workout in progress: %@"
+          }
+        }
+      }
+    },
+    "Training löschen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete Workout"
+          }
+        }
+      }
+    },
+    "Training starten" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Start Workout"
+          }
+        }
+      }
+    },
+    "Training verwerfen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Discard Workout"
+          }
+        }
+      }
+    },
+    "Training wirklich löschen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Delete This Workout?"
+          }
+        }
+      }
+    },
+    "Trainings" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Workouts"
+          }
+        }
+      }
+    },
+    "Trainings, Läufe, Gewicht und Profil werden gelöscht. Ein letztes Backup wird vorher noch gespeichert." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Workouts, runs, weight, and profile will be deleted. A final backup is saved first."
+          }
+        }
+      }
+    },
+    "Trainingsplan" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Training plan"
+          }
+        }
+      }
+    },
+    "Trainingstag umbenennen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Rename Workout Day"
+          }
+        }
+      }
+    },
+    "Trainingstage" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Training days"
+          }
+        }
+      }
+    },
+    "Trainingsverlauf (%lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Workout history (%lld)"
+          }
+        }
+      }
+    },
+    "Trapez (Nacken)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Traps (neck)"
+          }
+        }
+      }
+    },
+    "Trizeps" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Triceps"
+          }
+        }
+      }
+    },
+    "Über" : {
+
+    },
+    "Über dich" : {
+
+    },
+    "Übersicht" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overview"
+          }
+        }
+      }
+    },
+    "Übung entfernen" : {
+
+    },
+    "Übung hinzufügen" : {
+
+    },
+    "Übung oder Gerät suchen" : {
+
+    },
+    "Übung tauschen" : {
+
+    },
+    "Übungen" : {
+
+    },
+    "Übungsbilder: Free Exercise DB (Public Domain)" : {
+
+    },
+    "Übungsoptionen" : {
+
+    },
+    "Umbenennen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Rename"
+          }
+        }
+      }
+    },
+    "unbekannt (Simulator)" : {
+
+    },
+    "Unterarme" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Forearms"
+          }
+        }
+      }
+    },
+    "Unterer Rücken" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lower back"
+          }
+        }
+      }
+    },
+    "Unterkörper" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lower Body"
+          }
+        }
+      }
+    },
+    "Verlauf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "History"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Version"
+          }
+        }
+      }
+    },
+    "Volumen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Volume"
+          }
+        }
+      }
+    },
+    "Vorname" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "First name"
+          }
+        }
+      }
+    },
+    "Waden" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calves"
+          }
+        }
+      }
+    },
+    "Wdh." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Reps"
+          }
+        }
+      }
+    },
+    "Weiblich" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Female"
+          }
+        }
+      }
+    },
+    "Weiter geht's mit dem nächsten Satz." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Time for your next set."
+          }
+        }
+      }
+    },
+    "Weiter trainieren" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Keep Training"
+          }
+        }
+      }
+    },
+    "Wettkampf" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Race"
+          }
+        }
+      }
+    },
+    "Wie lief's? (optional)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "How did it go? (optional)"
+          }
+        }
+      }
+    },
+    "Wiederherstellen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Restore"
+          }
+        }
+      }
+    },
+    "Wiederherstellen fehlgeschlagen: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Restore failed: %@"
+          }
+        }
+      }
+    },
+    "Willkommen bei RepFolio" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Welcome to RepFolio"
+          }
+        }
+      }
+    },
+    "Wirklich ALLE Daten löschen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Really Delete ALL Data?"
+          }
+        }
+      }
+    },
+    "Woche" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Week"
+          }
+        }
+      }
+    },
+    "z. B. Beinpresse, Kabel, Brust" : {
+
+    },
+    "Zäh" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Tough"
+          }
+        }
+      }
+    },
+    "Zeit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Time"
+          }
+        }
+      }
+    },
+    "Zuletzt: %@ × %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Zuletzt: %1$@ × %2$lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Last: %1$@ × %2$lld"
+          }
+        }
+      }
+    },
+    "Zurücksetzen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Reset"
+          }
+        }
+      }
+    },
+    "Zusammenfassung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Summary"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}
